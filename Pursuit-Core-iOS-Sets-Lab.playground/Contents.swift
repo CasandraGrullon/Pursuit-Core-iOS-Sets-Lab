@@ -24,8 +24,13 @@ let scores = [1, 77, 83, 32, 77, 77, 83, 32, 99]
 var scoresThatAppearOnce = [Int]()
 
 // Your code here
+var setOfscores : Set<Int> = []
+setOfscores.union(scores)
+for score in setOfscores {
+    scoresThatAppearOnce.append(score)
+}
 
-//assert(scoresThatAppearOnce == [1, 99], "Was expecting [1, 99], but got \(scoresThatAppearOnce)")
+assert(scoresThatAppearOnce == [1, 99], "Was expecting [1, 99], but got \(scoresThatAppearOnce)")
 
 // Question Three
 
@@ -95,9 +100,9 @@ var strThreeIsPangram: Bool = false
 
 
 
-//assert(strOneIsPangram == true, "Was expecting true, but got \(strOneIsPangram)")
-//assert(strTwoIsPangram == false, "Was expecting false, but got \(strTwoIsPangram)")
-//assert(strThreeIsPangram == true, "Was expecting false, but got \(strThreeIsPangram)")
+assert(strOneIsPangram == true, "Was expecting true, but got \(strOneIsPangram)")
+assert(strTwoIsPangram == false, "Was expecting false, but got \(strTwoIsPangram)")
+assert(strThreeIsPangram == true, "Was expecting false, but got \(strThreeIsPangram)")
 
 
 
